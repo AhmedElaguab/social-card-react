@@ -10,6 +10,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <header className="header">
+          <nav>
+            <h1>SocialCard</h1>
+          </nav>
+        </header>
         <SocialCard data={this.state.data} />
       </div>
     );
