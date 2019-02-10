@@ -53,3 +53,8 @@
   font-size: 19px;
   font-weight: normal;
 }
+
+.social-card-user-url {
+  margin-left: 1rem;
+  widows: 0.5rem;
+}

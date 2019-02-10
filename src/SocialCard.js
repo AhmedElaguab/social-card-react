@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 class SocialCard extends Component {
   state = {};
@@ -10,7 +12,16 @@ class SocialCard extends Component {
             <div className="social-card-user">
               <div className="social-card-user-avatar">{card.user.name[0]}</div>
               <div className="social-card-user-name">
-                <p>{card.user.name}</p>
+                <p>
+                  {card.user.name}
+                  <a
+                    className="social-card-user-url"
+                    href={card.user.url}
+                    target="blank"
+                  >
+                    <FontAwesomeIcon icon={faExternalLinkAlt} size="xs" />
+                  </a>
+                </p>
                 <p className="social-card-user-screen_name">
                   @{card.user.screen_name} - {card.user.location}
                 </p>
