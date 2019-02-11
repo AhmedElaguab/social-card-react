@@ -33,6 +33,7 @@ class SocialCard extends Component {
                   <a
                     href={card.entities.urls[0].url}
                     className="social-card-body-entities-url"
+                    target="_blank"
                   >
                     {card.entities.urls[0].unwound.title}
                     <br />
