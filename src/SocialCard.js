@@ -27,6 +27,22 @@ class SocialCard extends Component {
                 </p>
               </div>
             </div>
+            <div className="social-card-body">
+              <div className="social-card-body-entities">
+                {card.entities.urls && (
+                  <a
+                    href={card.entities.urls[0].url}
+                    className="social-card-body-entities-url"
+                  >
+                    {card.entities.urls[0].unwound.title}
+                    <br />
+                    <hr />
+                    <small>{card.entities.urls[0].url}</small>
+                  </a>
+                )}
+              </div>
+              <p className="social-card-body-p">{card.text}</p>
+            </div>
           </div>
         ))}
       </div>

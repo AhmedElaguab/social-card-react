@@ -26,6 +26,7 @@
 
 .social-card-user {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .social-card-user p {
@@ -57,4 +58,36 @@
 .social-card-user-url {
   margin-left: 1rem;
   widows: 0.5rem;
+}
+
+.social-card-body {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.social-card-body-p {
+  font-size: 1.1rem;
+}
+
+.social-card-body-entities-url {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #444;
+  padding: 0.5rem;
+  background-color: #eee;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.social-card-body-entities-url hr {
+  margin: 0;
+  margin-top: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.social-card-body-entities-url small {
+  font-size: 1rem;
+  color: #999;
 }
